@@ -158,7 +158,10 @@ const Header: React.VFC<HeaderProps> = props => {
               <Icon name="eye" />
             </div>
 
-            <iframe src={GITHUB_BTN_URL} frameBorder={0} scrolling="no" width={54} height={20} />
+            <a href="https://github.com/DHARANIVIP" target="_blank" rel="noopener noreferrer" css={styles.githubLink}>
+              <Icon name="github" prefix="fab" />
+              DHARANIVIP
+            </a>
           </Fragment>
         )}
       </div>

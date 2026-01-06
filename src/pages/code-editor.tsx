@@ -155,6 +155,13 @@ class CodeEditor extends React.Component<CodeEditorProps, State> {
 
   componentDidMount() {
     const id = this.getQueryStringValue('session');
+
+    // Auto-redirect if id is missing or invalid
+    if (!isNumeric(id) || id.length !== 13) {
+      window.location.replace(`/code-editor?session=${new Date().getTime()}`);
+      return;
+    }
+
     if (isNumeric(id) && id.length === 13) {
       this.dbPrefix = `documents-no-owner/${id}`;
       this.userId = Math.floor(Math.random() * 9999999999).toString();
@@ -321,8 +328,8 @@ class CodeEditor extends React.Component<CodeEditorProps, State> {
       window.location.search.replace(
         new RegExp(
           '^(?:.*[&\\?]' +
-            encodeURIComponent(key).replace(/[.+*]/g, '\\$&') +
-            '(?:\\=([^&]*))?)?.*$',
+          encodeURIComponent(key).replace(/[.+*]/g, '\\$&') +
+          '(?:\\=([^&]*))?)?.*$',
           'i',
         ),
         '$1',

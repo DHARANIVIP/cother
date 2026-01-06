@@ -90,6 +90,16 @@ const createStyles = (t: ThemeLib) => {
     footerBtnFork: css`
       margin-left: ${t.spacing.s}px;
     `,
+    githubLink: css`
+      color: inherit;
+      text-decoration: none;
+      margin-left: ${t.spacing.s}px;
+      transition: color ${t.animation.timing.fast}ms ${t.animation.easing.fast};
+
+      &:hover {
+        color: ${t.color.redPrimary};
+      }
+    `,
   };
 };
 

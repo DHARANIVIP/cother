@@ -5,7 +5,7 @@
   "description": "A real-time collaborative code editor and previewer.",
   "homepage": "https://cother.netlify.app",
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next dev",
     "build": "next build && next export",
     "serve": "next start",
     "serve-static": "serve -c serve.json",
@@ -45,6 +45,7 @@
     "@types/react-transition-group": "^4.4.1",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "cross-env": "^10.1.0",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",

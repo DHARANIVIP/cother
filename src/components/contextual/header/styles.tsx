@@ -101,6 +101,24 @@ const createStyles = (t: ThemeLib) => {
         margin-left: ${t.spacing.s / 2}px;
       }
     `,
+    githubLink: css`
+      display: flex;
+      align-items: center;
+      font-size: ${t.typography.size.small}px;
+      font-weight: ${t.typography.weight.medium};
+      color: ${t.color.lightPrimary};
+      text-decoration: none;
+      margin-left: ${t.spacing.m}px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      svg {
+        font-size: ${t.typography.size.medium}px;
+        margin-right: ${t.spacing.s / 2}px;
+      }
+    `,
   };
 };
 
