@@ -41,14 +41,6 @@ const Home: React.VFC = () => {
         Made with&nbsp;
         <Icon name="heart" css={styles.footerIcon} />
         &nbsp;by Dharani
-        <a
-          href="https://github.com/DHARANIVIP"
-          target="_blank"
-          rel="noopener noreferrer"
-          css={styles.githubLink}
-        >
-          <Icon name="github" prefix="fab" />
-        </a>
       </div>
     </div>
   );

@@ -157,11 +157,6 @@ const Header: React.VFC<HeaderProps> = props => {
               {totalUser}
               <Icon name="eye" />
             </div>
-
-            <a href="https://github.com/DHARANIVIP" target="_blank" rel="noopener noreferrer" css={styles.githubLink}>
-              <Icon name="github" prefix="fab" />
-              DHARANIVIP
-            </a>
           </Fragment>
         )}
       </div>
