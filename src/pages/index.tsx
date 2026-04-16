@@ -3,7 +3,7 @@
 import React from 'react';
 import { jsx, useTheme } from '@emotion/react';
 import { useRouter } from 'next/router';
-import { PROJECT_NAME, GITHUB_BTN_URL } from 'src/contants';
+import { PROJECT_NAME } from 'src/contants';
 import Icon from 'src/components/base/icon';
 
 import createStyles from 'src/styles/pages';

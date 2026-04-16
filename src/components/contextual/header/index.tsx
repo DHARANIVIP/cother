@@ -4,7 +4,7 @@ import React, { Fragment } from 'react';
 import { jsx, useTheme } from '@emotion/react';
 import { useRouter } from 'next/router';
 import copy from 'copy-to-clipboard';
-import { PROJECT_NAME, GITHUB_BTN_URL } from 'src/contants';
+import { PROJECT_NAME } from 'src/contants';
 import Button from 'src/components/base/button';
 import ButtonGroup from 'src/components/base/button-group';
 import Icon from 'src/components/base/icon';

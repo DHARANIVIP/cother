@@ -1,6 +1,6 @@
 # Cother
 A real-time collaborative code editor and previewer.  
-This project is just for fun and to learn [firepad](https://github.com/firebase/firepad) implementation.
+This project is just for fun and to learn firepad implementation.
 
 ## Development
 
